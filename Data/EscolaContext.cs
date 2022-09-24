@@ -17,5 +17,7 @@ protected override void OnConfiguring(DbContextOptionsBuilder options)
 options.UseSqlServer(Configuration.GetConnectionString("StringConexaoSQLServer"));
 }
 public DbSet<Aluno>? Aluno { get; set; }
+public DbSet<Curso>? Curso { get; set; }
 }
 }
+
